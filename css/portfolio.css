@@ -122,6 +122,9 @@ div#div_gradient {
 
     /*----------------------------------------------------------------------------*/
 
+html{
+    overflow-x: hidden;
+}
 
 body {
     background-color: #f4f4f4;
@@ -134,40 +137,8 @@ body {
     padding: 0;
     margin: 0;
     overflow-x: hidden;
-
 }
 
-/*body > div#section-header * {
-    padding: 0;
-    margin: 0;
-}*/
-
-
-div#section-header {
-    /*background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/wp4201464-lima-peru-wallpapers.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-bottom: solid #000000 1px;*/
-    min-height: calc(500px + 19vw);
-    width: 100%;
-    background-color: #FFFFFF;
-    background-size: cover;
-    padding: 0;
-    border-bottom: 1px solid rgba(120,120,120,0.3);
-
-}
-
-div#section-header.over {
-    min-height: 0px;
-    width: 100%;
-    background: unset;
-    border-bottom: unset;
-}
-div#section-header.over div#h_title h1 {
-    font-size:calc(60px + 1vw);
-    font-weight: 300;
-    padding-top: 12px;
-}
 
 div#title_container h1{
     font-size: 42px;
@@ -918,20 +889,21 @@ div.section_title h1 {
 div#uni_desc {
     max-width: 1300px;
     margin: auto;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 div.project_container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 30px;
-    margin-bottom: 80px;
+    margin: 30px 0 80px 0;
 }
 
 div.project_description {
     max-width: 700px;
     flex: 1 1 500px; /* Allows the description to grow and shrink */
-    margin: auto;
+    margin: auto 0 auto 0;
 }
 
 div.project_image_r {
@@ -939,23 +911,25 @@ div.project_image_r {
     flex: 1 1 300px; /* Allows the image to grow and shrink */
     text-align: right; /* Center the image when it goes to the next line */
 }
+
 div.project_image_l {
     max-width: 700px;
     flex: 1 1 300px; /* Allows the image to grow and shrink */
     text-align: left; /* Center the image when it goes to the next line */
-
 }
 
 div.project_image_r img {
     width: 100%;
     max-width: 450px;
     border-radius: 5%;
+    vertical-align: middle;
 }
 
 div.project_image_l img {
     width: 100%;
     max-width: 450px;
     border-radius: 5%;
+    vertical-align: middle;
 }
 
 
@@ -1072,7 +1046,7 @@ section#technical_skills{
 }
 
 div#tech_description{
-   margin-top: 100px;
+   margin: 100px 50px 0 50px;
 }
 
 div#tech_description p{
@@ -1094,7 +1068,8 @@ div#tech_description p{
 
 .language {
     margin-bottom: 20px;
-    max-width: 600px;
+    max-width: 580px;
+
 }
 
 .language img {
@@ -1124,7 +1099,7 @@ div#tech_description p{
 }
 
 .hobby {
-    max-width: 600px;
+    max-width: 580px;
     margin-bottom: 20px;
 }
 strong{
@@ -1162,7 +1137,7 @@ div#about_container{
 }
 
 #hob_int{
-    margin-bottom: 100px;
+    margin: 0 50px 100px 50px;
 }
 /*--------------------------------------------*/
 .contact-me {
