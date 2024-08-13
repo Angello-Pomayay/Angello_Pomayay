@@ -122,6 +122,9 @@ div#div_gradient {
 
     /*----------------------------------------------------------------------------*/
 
+div#body_container{
+    overflow-x: clip; /*solve the fade overflow problem on mobile*/
+}
 
 body {
     background-color: #f4f4f4;
