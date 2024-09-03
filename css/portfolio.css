@@ -1354,13 +1354,48 @@ footer p {
     }
     /*modifiche bottoni*/
     div#bottoni{
-        margin-top: 40px;
+        margin-top: 50px;
     }
 
 
     div#bottoni > ul{
         margin-top: 0;
         padding-left: 0;
+    }
+    div#bottoni ul li {
+        display: inline;
+        margin: 0px 10px 0px 0px;
+
+    }
+
+    div#bottoni ul li.sing {
+        display: inline;
+        margin: 0px 32px 0px 0px;
+    }
+
+
+    div#bottoni ul li a {
+        color: #000000;
+        font-size: 18px;
+        font-weight: 300;
+        letter-spacing: 1px;
+        text-transform: none;
+        padding: 20px 20px 20px 20px;
+        background-color: rgba(255,255,255,0.4);
+        border: solid #000000 1px;
+        border-radius: 6px;
+        transition: 0.5s;
+    }
+
+
+    div#bottoni ul li a:hover {
+        /* text-shadow: 1px 1px 1px #ffffff;*/
+        background-color: #000000;
+        border: solid #000000 1px;
+        border-radius: 6px;
+        /*  box-shadow: inset 0px 0px 2px #FFFFFF;*/
+        color: #ffffff;
+        transition: 0.5s;
     }
 
     div#windows_dd{
