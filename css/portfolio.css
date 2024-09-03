@@ -333,6 +333,16 @@ main {
     padding: 0;
 }
 
+p#ws_title{
+    display: inline;
+    margin-top: 28px;
+    position: absolute;
+    font-size: 25px;
+    font-weight: 200;
+    color: #666666;
+    margin-left: 50px;
+}
+
 div#bottone{
     margin-top: calc(13px + 7vw);
     text-align: center;
@@ -1281,4 +1291,93 @@ footer p {
     margin: 20px 0 0 0;
 }
 
+/*---------------   mobile adaptation   -----------------*/
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    /*modifiche svg*/
+    svg#pc_image{
+        max-height: 350px;
+        float: unset;
+    }
+    /*modifiche navbar*/
+    div#bar > nav > ul{
+        display: none;
+    }
+    div#bar > nav{
+        text-align: center;
+
+    }
+    p#ws_title{
+        display: block;
+        padding-top: 10px;
+        position: unset;
+        font-size: 28px;
+        font-weight: 200;
+        color: #666666;
+        margin-left: 0;
+    }
+
+    /*modifiche carosello*/
+    div.carousel img{
+        max-height: 180px;
+        max-width: 150px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    /*modifiche name window*/
+    div.home_window{
+        width: unset;
+        margin: 0 15px 0 15px;
+        background: rgba(243, 243, 243, 0.7);
+        padding: 30px 15px 40px 30px;
+        border-radius: 10px;
+    }
+    div.home_window h1{
+        margin: 0;
+        padding: 0;
+        font-size: 41px;
+        color: #000000;
+        text-align: left;
+        font-weight: 300;
+    }
+    div.home_window p{
+        text-align: left;
+        font-weight: 300;
+        font-size: 1.25rem;
+    }
+    /*modifiche bottoni*/
+    div#bottoni{
+        margin-top: 40px;
+    }
+
+
+    div#bottoni > ul{
+        margin-top: 0;
+        padding-left: 0;
+    }
+
+    div#windows_dd{
+        position: relative;
+        margin-top: 15px;
+    }
+
+    /* sections */
+    section#projects {
+        margin-top: 250px;
+        margin-bottom: 0;
+        padding-top: 60px;
+        padding-bottom: 0;
+    }
+
+    div.section_title h1{
+        margin-bottom: 0;
+    }
+}
 
