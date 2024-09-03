@@ -1306,11 +1306,11 @@ footer p {
     }
     div#bar > nav{
         text-align: center;
-
+        height: 60px;
     }
     p#ws_title{
         display: block;
-        padding-top: 10px;
+        padding-top: 0;
         position: unset;
         font-size: 28px;
         font-weight: 200;
